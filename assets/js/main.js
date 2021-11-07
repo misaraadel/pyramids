@@ -43,6 +43,7 @@ $(document).ready(function () {
         $('.navbar-nav').toggleClass('acitve-nav');
         $('body').toggleClass('overflowNone')
     });
+
     //owl header screen 
     $('.owl-header').owlCarousel({
         rtl: true,
@@ -101,6 +102,42 @@ $(document).ready(function () {
             },
             1000:{
                 items:3
+            }
+        }
+    });
+    //gallery slider 
+    $('.gallery-sldier').owlCarousel({
+        rtl: true,
+        loop:true,
+        margin: 20,
+        nav:true,
+        dots: false,
+        autoplay: false,
+        touchDrag  : true,
+		mouseDrag  : true,
+		autoWidth: false,
+		animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        autoplayTimeout: 6000,
+		smartSpeed: 2000,
+		dragEndSpeed: 2000,
+		slidSpeed: 900,
+        paginationSpeed: 900,
+        autoplayHoverPause: true,
+        navContainerClass: "container owl-nav",
+		navText: [
+            '<i class="fas fa-chevron-right"></i>',
+            '<i class="fas fa-chevron-left"></i>'
+        ],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:4
             }
         }
     });

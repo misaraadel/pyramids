@@ -55,6 +55,35 @@
     .live-projects .content{
         padding: 50px 50px 100px !important;
     }
+    .copyrights{
+        padding: 5px 0px;
+    }
+    .copyrights .content{
+        flex-direction: column;
+    }
+    .copyrights .content p {
+        margin: 5px 0px;
+        font-size: 10px !important;
+    }
+    .buy-now .box .flex-box , 
+    .buy-now .box .content ul{
+        flex-direction: column;
+    }
+    .buy-now .box .content ul li{
+        margin: 0px 0px 20px 0px;
+    }
+    .buy-now .box .learn-more{
+        left: 50%;
+        transform: translateX(-50%);
+        right: unset !important;
+    }
+    .gallery-video .image-content{
+        height: 350px;
+    }
+    .gallery-video .image-content .gallery-play-video{
+        width: 200px;
+        height: 200px;
+    }
 }
 @media (max-width: 766px) {
     .navbar-nav{
